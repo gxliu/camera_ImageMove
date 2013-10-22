@@ -209,6 +209,13 @@ architecture Behavioral of camera_to_display is
 	signal ui_y_count : std_logic_vector(7 downto 0);
 	signal ui_b_count : std_logic_vector(7 downto 0);
 	
+	-- êVÇΩÇ…í«â¡ÇµÇΩêMçÜ
+	signal disp_vsync_old         : std_logic;
+	signal disp_h_offset          : std_logic_vector(10 downto 0);
+	signal disp_v_offset          : std_logic_vector(10 downto 0);
+	signal disp_line_count_shift  : std_logic_vector(10 downto 0);
+	signal disp_pixel_count_shift : std_logic_vector(10 downto 0);
+	
 begin
 	---------------------------------------------------------
 	--Digital Clock Manager
