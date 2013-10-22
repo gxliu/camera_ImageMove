@@ -1,0 +1,421 @@
+//! **************************************************************************
+// Written by: Map P.58f on Tue Aug 27 16:05:17 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "O_C1SCL" LOCATE = SITE "T8" LEVEL 1;
+COMP "O_VGA_HSYNC" LOCATE = SITE "N9" LEVEL 1;
+COMP "O_C1MCLK" LOCATE = SITE "U9" LEVEL 1;
+COMP "O_C1PWDN" LOCATE = SITE "U3" LEVEL 1;
+COMP "O_C1RSTB" LOCATE = SITE "V5" LEVEL 1;
+COMP "O_VGA_VSYNC" LOCATE = SITE "M9" LEVEL 1;
+COMP "O_EXTEND_LED_RYB<0>" LOCATE = SITE "K13" LEVEL 1;
+COMP "O_EXTEND_LED_RYB<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "O_EXTEND_LED_RYB<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "O_VGA_nSYNC" LOCATE = SITE "M5" LEVEL 1;
+COMP "O_LCD_ON" LOCATE = SITE "L5" LEVEL 1;
+COMP "O_LCD_UD" LOCATE = SITE "G6" LEVEL 1;
+COMP "O_LCD_RL" LOCATE = SITE "K5" LEVEL 1;
+COMP "O_LCD_VQ" LOCATE = SITE "K6" LEVEL 1;
+COMP "O_VGA_nBLANK" LOCATE = SITE "M6" LEVEL 1;
+COMP "O_VGA_nPSAVE" LOCATE = SITE "L6" LEVEL 1;
+COMP "O_LCD_CLK" LOCATE = SITE "V15" LEVEL 1;
+COMP "O_LCD_ENB" LOCATE = SITE "H6" LEVEL 1;
+COMP "I_EXTEND_SWITCH_RYB<0>" LOCATE = SITE "F5" LEVEL 1;
+COMP "I_EXTEND_SWITCH_RYB<1>" LOCATE = SITE "F4" LEVEL 1;
+COMP "I_EXTEND_SWITCH_RYB<2>" LOCATE = SITE "D3" LEVEL 1;
+COMP "O_VGA_CLK" LOCATE = SITE "P10" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<2>" LOCATE = SITE "J12" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<3>" LOCATE = SITE "G13" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<4>" LOCATE = SITE "D14" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<5>" LOCATE = SITE "E9" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<6>" LOCATE = SITE "E8" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED<7>" LOCATE = SITE "E6" LEVEL 1;
+COMP "O_VGA_B<0>" LOCATE = SITE "N11" LEVEL 1;
+COMP "O_VGA_B<1>" LOCATE = SITE "P11" LEVEL 1;
+COMP "O_VGA_B<2>" LOCATE = SITE "N12" LEVEL 1;
+COMP "O_VGA_B<3>" LOCATE = SITE "R14" LEVEL 1;
+COMP "O_VGA_B<4>" LOCATE = SITE "P13" LEVEL 1;
+COMP "O_VGA_B<5>" LOCATE = SITE "P12" LEVEL 1;
+COMP "O_VGA_B<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "O_VGA_B<7>" LOCATE = SITE "R12" LEVEL 1;
+COMP "O_VGA_G<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "O_VGA_G<1>" LOCATE = SITE "N7" LEVEL 1;
+COMP "O_VGA_G<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "O_VGA_G<3>" LOCATE = SITE "P8" LEVEL 1;
+COMP "O_VGA_G<4>" LOCATE = SITE "P6" LEVEL 1;
+COMP "O_VGA_G<5>" LOCATE = SITE "P9" LEVEL 1;
+COMP "O_VGA_G<6>" LOCATE = SITE "R6" LEVEL 1;
+COMP "O_VGA_G<7>" LOCATE = SITE "R9" LEVEL 1;
+COMP "O_VGA_R<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "O_VGA_R<1>" LOCATE = SITE "E7" LEVEL 1;
+COMP "O_VGA_R<2>" LOCATE = SITE "F11" LEVEL 1;
+COMP "O_VGA_R<3>" LOCATE = SITE "E10" LEVEL 1;
+COMP "O_VGA_R<4>" LOCATE = SITE "F7" LEVEL 1;
+COMP "O_VGA_R<5>" LOCATE = SITE "F9" LEVEL 1;
+COMP "O_VGA_R<6>" LOCATE = SITE "F8" LEVEL 1;
+COMP "O_VGA_R<7>" LOCATE = SITE "G9" LEVEL 1;
+COMP "O_EXTEND_7SEG_LED_SELECT" LOCATE = SITE "K14" LEVEL 1;
+COMP "O_PILOT_LED" LOCATE = SITE "V7" LEVEL 1;
+COMP "I_C1D<0>" LOCATE = SITE "T5" LEVEL 1;
+COMP "I_C1D<1>" LOCATE = SITE "V3" LEVEL 1;
+COMP "I_C1D<2>" LOCATE = SITE "V2" LEVEL 1;
+COMP "I_C1D<3>" LOCATE = SITE "U5" LEVEL 1;
+COMP "I_C1D<4>" LOCATE = SITE "U6" LEVEL 1;
+COMP "I_C1D<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "I_C1D<6>" LOCATE = SITE "V4" LEVEL 1;
+COMP "I_C1D<7>" LOCATE = SITE "V8" LEVEL 1;
+COMP "I_C1VSYNC" LOCATE = SITE "R5" LEVEL 1;
+COMP "I_C1D<8>" LOCATE = SITE "R7" LEVEL 1;
+COMP "I_C1D<9>" LOCATE = SITE "T7" LEVEL 1;
+COMP "IO_C1SDA" LOCATE = SITE "R8" LEVEL 1;
+COMP "I_C1HREF" LOCATE = SITE "T4" LEVEL 1;
+COMP "I_C1PCLK" LOCATE = SITE "V9" LEVEL 1;
+COMP "I_CLK25" LOCATE = SITE "A10" LEVEL 1;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B"
+        PINNAME CLKB;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>
+        = BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B"
+        PINNAME CLKB;
+TIMEGRP MAIN_DCM_CLK0_BUF = BEL "disp_hsync" BEL "disp_enable" BEL
+        "disp_vsync" BEL "disp_y_peak_0" BEL "disp_y_peak_1" BEL
+        "disp_y_peak_2" BEL "disp_y_peak_3" BEL "disp_y_peak_4" BEL
+        "disp_y_peak_5" BEL "disp_y_peak_6" BEL "disp_y_peak_7" BEL
+        "disp_enable_8d_0" BEL "disp_enable_8d_1" BEL "disp_write_enable_0"
+        BEL "disp_write_addr_0" BEL "disp_write_addr_1" BEL
+        "disp_write_addr_2" BEL "disp_write_addr_3" BEL "disp_write_addr_4"
+        BEL "disp_write_addr_5" BEL "disp_write_addr_6" BEL
+        "disp_write_addr_7" BEL "disp_write_addr_8" BEL "disp_write_addr_9"
+        BEL "disp_write_addr_10" BEL "disp_write_addr_11" BEL
+        "disp_write_addr_12" BEL "disp_write_addr_13" BEL "disp_write_addr_14"
+        BEL "disp_pixel_count_0" BEL "disp_pixel_count_1" BEL
+        "disp_pixel_count_2" BEL "disp_pixel_count_3" BEL "disp_pixel_count_4"
+        BEL "disp_pixel_count_5" BEL "disp_pixel_count_6" BEL
+        "disp_pixel_count_7" BEL "disp_pixel_count_8" BEL "disp_pixel_count_9"
+        BEL "disp_line_count_0" BEL "disp_line_count_1" BEL
+        "disp_line_count_2" BEL "disp_line_count_3" BEL "disp_line_count_4"
+        BEL "disp_line_count_5" BEL "disp_line_count_6" BEL
+        "disp_line_count_7" BEL "disp_line_count_8" BEL "disp_line_count_9"
+        BEL "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_9" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_8" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_7" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_6" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_5" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_4" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_3" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_2" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_1" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_timer_0" BEL
+        "Inst_EXTEND_BOARD_WITH_7SEG/sampling_clk" BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_0"
+        BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_1"
+        BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>"
+        BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_0"
+        BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_1"
+        BEL
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.B_pins<15>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>"
+        PIN
+        "VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.B_pins<13>"
+        BEL "O_LCD_CLK" BEL "O_VGA_CLK" BEL "MAIN_DCM/CLK0_BUFG_INST.GCLKMUX"
+        BEL "MAIN_DCM/CLK0_BUFG_INST";
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A"
+        PINNAME CLKA;
+PIN
+        VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>
+        = BEL
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A"
+        PINNAME CLKA;
+TIMEGRP CAM1_DCM_CLK0_BUF = BEL "cam1_y_0" BEL "cam1_y_1" BEL "cam1_y_2" BEL
+        "cam1_y_3" BEL "cam1_y_4" BEL "cam1_y_5" BEL "cam1_y_6" BEL "cam1_y_7"
+        BEL "cam1_href_old" BEL "cam1_y_valid" BEL "cam1_line_count_0" BEL
+        "cam1_line_count_1" BEL "cam1_line_count_2" BEL "cam1_line_count_3"
+        BEL "cam1_line_count_4" BEL "cam1_line_count_5" BEL
+        "cam1_line_count_6" BEL "cam1_line_count_7" BEL "cam1_line_count_8"
+        BEL "cam1_line_count_9" BEL "cam1_pixel_count_0" BEL
+        "cam1_pixel_count_1" BEL "cam1_pixel_count_2" BEL "cam1_pixel_count_3"
+        BEL "cam1_pixel_count_4" BEL "cam1_pixel_count_5" BEL
+        "cam1_pixel_count_6" BEL "cam1_pixel_count_7" BEL "cam1_pixel_count_8"
+        BEL "cam1_pixel_count_9" PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>"
+        PIN
+        "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp4x4.ram.A_pins<13>"
+        BEL "CAM1_DCM/CLK0_BUFG_INST.GCLKMUX" BEL "CAM1_DCM/CLK0_BUFG_INST";
+PIN CAM1_DCM/DCM_SP_INST_pins<2> = BEL "CAM1_DCM/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP I_C1PCLK = PIN "CAM1_DCM/DCM_SP_INST_pins<2>";
+PIN MAIN_DCM/DCM_SP_INST_pins<3> = BEL "MAIN_DCM/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP I_CLK25 = PIN "MAIN_DCM/DCM_SP_INST_pins<3>";
+TS_I_C1PCLK = PERIOD TIMEGRP "I_C1PCLK" 40 ns HIGH 50%;
+TS_I_CLK25 = PERIOD TIMEGRP "I_CLK25" 40 ns HIGH 50%;
+TS_CAM1_DCM_CLK0_BUF = PERIOD TIMEGRP "CAM1_DCM_CLK0_BUF" TS_I_C1PCLK HIGH
+        50%;
+TS_MAIN_DCM_CLK0_BUF = PERIOD TIMEGRP "MAIN_DCM_CLK0_BUF" TS_I_CLK25 HIGH 50%;
+SCHEMATIC END;
+

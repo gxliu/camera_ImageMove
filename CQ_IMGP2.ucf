@@ -1,0 +1,9 @@
+NET "I_CLK25"  LOC = "A10"  ; 
+
+
+NET "O_PILOT_LED"	LOC = "V7";
+
+
+#Created by Constraints Editor (xc3s1200e-fg320-4) - 2011/06/19
+NET "I_CLK25" TNM_NET = I_CLK25;
+TIMESPEC TS_I_CLK25 = PERIOD "I_CLK25" 40 ns HIGH 50%;

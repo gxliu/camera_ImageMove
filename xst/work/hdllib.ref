@@ -1,0 +1,12 @@
+AR extend_board_with_7seg behavioral C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/EXTEND_BOARD_WITH_7SEG.vhd sub00/vhpl07 1377587063
+EN camera_to_display NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd sub00/vhpl08 1377587064
+AR dcm2 behavioral C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM2.vhd sub00/vhpl03 1377587057
+AR camera_to_display behavioral C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd sub00/vhpl09 1377587065
+EN vram160x120x8 NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM160x120x8.vhd sub00/vhpl04 1377587058
+AR vram160x120x8 vram160x120x8_a C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM160x120x8.vhd sub00/vhpl05 1377587059
+EN vram2 NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM2.vhd sub00/vhpl10 1377587060
+AR vram2 vram2_a C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM2.vhd sub00/vhpl11 1377587061
+EN dcm1 NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM1.vhd sub00/vhpl00 1377587054
+EN dcm2 NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM2.vhd sub00/vhpl02 1377587056
+AR dcm1 behavioral C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM1.vhd sub00/vhpl01 1377587055
+EN extend_board_with_7seg NULL C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/EXTEND_BOARD_WITH_7SEG.vhd sub00/vhpl06 1377587062

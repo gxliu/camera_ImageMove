@@ -1,0 +1,6 @@
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\ipcore_dir\VRAM2.vhd"
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\ipcore_dir\VRAM160x120x8.vhd"
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\DCM2.vhd"
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\DCM1.vhd"
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\EXTEND_BOARD_WITH_7SEG.vhd"
+vhdl work "C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\camera_to_display.vhd"

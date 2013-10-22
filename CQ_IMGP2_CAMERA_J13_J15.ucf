@@ -1,0 +1,25 @@
+### CAMERA INPUT ### J13 J15
+NET "O_C1MCLK"    LOC = "U9" |SLEW = FAST |DRIVE = 12 ; #
+
+NET "I_C1PCLK"		LOC = "V9" ;
+NET "O_C1PWDN"		LOC = "U3" ;
+NET "I_C1VSYNC"	LOC = "R5" ;
+NET "I_C1HREF"		LOC = "T4" ;
+NET "IO_C1SDA"		LOC = "R8" ; 
+NET "O_C1SCL"		LOC = "T8" ; 
+NET "O_C1RSTB"		LOC = "V5" ; 
+
+NET "I_C1D<0>"		LOC = "T5" ; 
+NET "I_C1D<1>"		LOC = "V3" ; 
+NET "I_C1D<2>"		LOC = "V2" ; 
+NET "I_C1D<3>"		LOC = "U5" ; 
+NET "I_C1D<4>"		LOC = "U6" ; 
+NET "I_C1D<5>"		LOC = "U8" ; 
+NET "I_C1D<6>"		LOC = "V4" ; 
+NET "I_C1D<7>"		LOC = "V8" ; 
+#J15 only
+NET "I_C1D<8>"		LOC = "R7" ;
+NET "I_C1D<9>"		LOC = "T7" ;
+
+NET "I_C1PCLK" TNM_NET = I_C1PCLK;
+TIMESPEC TS_I_C1PCLK = PERIOD "I_C1PCLK" 40 ns HIGH 50%;

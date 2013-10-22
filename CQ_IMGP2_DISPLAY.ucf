@@ -1,0 +1,46 @@
+#display
+#RGB
+NET "O_VGA_R<0>"  LOC = "F12"  ; 
+NET "O_VGA_R<1>"  LOC = "E7"  ; 
+NET "O_VGA_R<2>"  LOC = "F11"  ; 
+NET "O_VGA_R<3>"  LOC = "E10"  ; 
+NET "O_VGA_R<4>"  LOC = "F7"  ; 
+NET "O_VGA_R<5>"  LOC = "F9"  ; 
+NET "O_VGA_R<6>"  LOC = "F8"  ; 
+NET "O_VGA_R<7>"  LOC = "G9"  ; 
+
+NET "O_VGA_G<0>"  LOC = "N8"  ;# 
+NET "O_VGA_G<1>"  LOC = "N7"  ;# 
+NET "O_VGA_G<2>"  LOC = "P7"  ;# 
+NET "O_VGA_G<3>"  LOC = "P8"  ;# 
+NET "O_VGA_G<4>"  LOC = "P6"  ;# 
+NET "O_VGA_G<5>"  LOC = "P9"  ;# 
+NET "O_VGA_G<6>"  LOC = "R6"  ;# 
+NET "O_VGA_G<7>"  LOC = "R9"  ;# 
+
+NET "O_VGA_B<0>"  LOC = "N11"  ; 
+NET "O_VGA_B<1>"  LOC = "P11"  ; 
+NET "O_VGA_B<2>"  LOC = "N12"  ; 
+NET "O_VGA_B<3>"  LOC = "R14"  ; 
+NET "O_VGA_B<4>"  LOC = "P13"  ; 
+NET "O_VGA_B<5>"  LOC = "P12"  ; 
+NET "O_VGA_B<6>"  LOC = "R11"  ; 
+NET "O_VGA_B<7>"  LOC = "R12"  ; 
+
+NET "O_VGA_HSYNC"  LOC = "N9"  ;
+NET "O_VGA_VSYNC"  LOC = "M9"  ;
+
+#DSub15pin analog RGB
+NET "O_VGA_CLK" 		LOC = "P10"   ;// DAC用のクロック
+NET "O_VGA_nBLANK" LOC = "M6"  ;
+NET "O_VGA_nPSAVE"	LOC = "L6";
+NET "O_VGA_nSYNC"	LOC = "M5";
+
+#J7 J8の液晶用
+NET "O_LCD_CLK"  LOC = "V15"  ;		# VGA_CLK2液晶用
+NET "O_LCD_ENB" LOC = "H6";
+NET "O_LCD_ON"  LOC = "L5";
+NET "O_LCD_RL" LOC = "K5";
+NET "O_LCD_UD" LOC = "G6";
+#J8 Only
+NET "O_LCD_VQ" LOC = "K6";
