@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\camera_to_display.ncd
-OUTFILE=C:\workspace\fpga\3rd_day\camera_practice_0_grayscale\camera_to_display.bit
+INFILE=C:\Users\Chelly\GitHub\camera_ImageMove\camera_to_display.ncd
+OUTFILE=C:\Users\Chelly\GitHub\camera_ImageMove\camera_to_display.bit
 FAMILY=Spartan3E
 PART=xc3s1200e-4fg320
-WORKINGDIR=C:\workspace\fpga\3rd_day\camera_practice_0_grayscale
+WORKINGDIR=C:\Users\Chelly\GitHub\camera_ImageMove
 LICENSE=WebPack
-USER_INFO=210789255_0_0_733
+USER_INFO=210813875_0_0_138

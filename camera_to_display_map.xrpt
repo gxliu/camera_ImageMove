@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt64" product="ISE" version="14.5">
+<document OS="nt" product="ISE" version="14.5">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Tue Aug 27 16:05:19 2013">
+  <application stringID="Map" timeStamp="Wed Oct 23 16:49:08 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.5\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.5\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.5\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.5\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.5\ISE_DS\PlanAhead\bin;D:\Xilinx\14.5\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.5\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\nt64\bin;D:\Xilinx\14.5\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;D:\Xilinx\14.5\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.5\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.5\ISE_DS\common\bin\nt64;D:\Xilinx\14.5\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\w32tex\bin;C:\Program Files (x86)\gs\gs9.06\bin;C:\Program Files (x86)\gs\gs9.06\lib;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\opencv\build\x86\vc10\bin;C:\Program Files (x86)\IronRuby 1.1\bin"/>
+          <item stringID="value" value="C:\Xilinx\14.5\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.5\ISE_DS\ISE\\bin\nt;C:\Xilinx\14.5\ISE_DS\ISE\bin\nt;C:\Xilinx\14.5\ISE_DS\ISE\lib\nt;C:\Xilinx\14.5\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.5\ISE_DS\PlanAhead\bin;C:\Xilinx\14.5\ISE_DS\EDK\bin\nt;C:\Xilinx\14.5\ISE_DS\EDK\lib\nt;C:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.5\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.5\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.5\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_be\bin;C:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_le\bin;C:\Xilinx\14.5\ISE_DS\common\bin\nt;C:\Xilinx\14.5\ISE_DS\common\lib\nt;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\android\android-sdk-windows\tools;C:\android\android-sdk-windows\platform-tools;C:\Program Files\Java\jre7\bin;C:\Program Files\KSK\DFU_Command_Line_Tools_from_KSK;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Java\jdk1.7.0_10\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,36 +20,32 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="D:\Xilinx\14.5\ISE_DS\ISE\"/>
+          <item stringID="value" value="C:\Xilinx\14.5\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
-          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="D:\Xilinx\Xilinx.lic"/>
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.5\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="D:\Xilinx\14.5\ISE_DS\ISE"/>
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.5\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="5">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="D:\Xilinx\14.5\ISE_DS\EDK"/>
-        </row>
-        <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="D:\Xilinx\14.5\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="C:\Xilinx\14.5\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 32-bit"/>
         <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
       </item>
-      <item stringID="User_EnvHost" value="Schedar-U1"/>
+      <item stringID="User_EnvHost" value="Chelly-PC"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i3-3217U CPU @ 1.80GHz"/>
-          <item stringID="speed" value="1795 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz"/>
+          <item stringID="speed" value="2095 MHz"/>
         </row>
       </table>
     </section>
@@ -73,16 +69,16 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="3"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="262552"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="8 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="6 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="202920"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="17344" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="144"/>
-        <item AVAILABLE="17344" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="249">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="72"/>
+        <item AVAILABLE="17344" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="133"/>
+        <item AVAILABLE="17344" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="223">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="76"/>
         </item>
-        <item AVAILABLE="8672" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="152">
+        <item AVAILABLE="8672" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="135">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
@@ -92,7 +88,7 @@
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
-        <item AVAILABLE="28" dataType="int" stringID="MAP_NUM_RAMB16" value="20"/>
+        <item AVAILABLE="28" dataType="int" stringID="MAP_NUM_RAMB16" value="10"/>
         <item AVAILABLE="24" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="4"/>
         <item AVAILABLE="8" dataType="int" stringID="MAP_NUM_DCM" value="2"/>
         <item AVAILABLE="28" dataType="int" stringID="MAP_NUM_MULT18X18SIO" value="2"/>
@@ -720,7 +716,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="14"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="12"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

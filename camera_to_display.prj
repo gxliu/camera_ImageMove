@@ -1,4 +1,3 @@
-vhdl work "ipcore_dir/VRAM2.vhd"
 vhdl work "ipcore_dir/VRAM160x120x8.vhd"
 vhdl work "DCM2.vhd"
 vhdl work "DCM1.vhd"

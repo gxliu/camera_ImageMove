@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-08-27T15:05:31</DateModified>
+  <DateModified>2013-10-23T10:01:12</DateModified>
   <ModuleName>camera_to_display</ModuleName>
   <SummaryTimeStamp>2013-08-27T11:10:27</SummaryTimeStamp>
-  <SavedFilePath>C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/iseconfig/camera_to_display.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/workspace/fpga/3rd_day/camera_practice_0_grayscale\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Chelly/GitHub/camera_ImageMove/iseconfig/camera_to_display.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Chelly/GitHub/camera_ImageMove\</ImplementationReportsDirectory>
   <DateInitialized>2013-08-26T16:19:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

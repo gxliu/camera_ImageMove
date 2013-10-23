@@ -1,14 +1,14 @@
-Release 14.5 par P.58f (nt64)
+Release 14.5 par P.58f (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-SCHEDAR-U1::  Tue Aug 27 16:05:25 2013
+CHELLY-PC::  Wed Oct 23 16:49:11 2013
 
 par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd
 camera_to_display.ncd camera_to_display.pcf 
 
 
 Constraints file: camera_to_display.pcf.
-Loading device for application Rf_Device from file '3s1200e.nph' in environment D:\Xilinx\14.5\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
    "camera_to_display" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -4
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -40,8 +40,8 @@ Design Summary Report:
    Number of BUFGMUXs                        4 out of 24     16%
    Number of DCMs                            2 out of 8      25%
    Number of MULT18X18SIOs                   2 out of 28      7%
-   Number of RAMB16s                        20 out of 28     71%
-   Number of Slices                        152 out of 8672    1%
+   Number of RAMB16s                        10 out of 28     35%
+   Number of Slices                        135 out of 8672    1%
       Number of SLICEMs                      0 out of 4336    0%
 
 
@@ -51,52 +51,52 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 5 secs 
-Finished initial Timing Analysis.  REAL time: 5 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 WARNING:Par:288 - The signal I_C1D<0>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal I_C1D<1>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal IO_C1SDA_IBUF has no load.  PAR will not attempt to route this signal.
 
 Starting Placer
-Total REAL time at the beginning of Placer: 5 secs 
-Total CPU  time at the beginning of Placer: 5 secs 
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:eef1b47e) REAL time: 10 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:288d577) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:eef1b47e) REAL time: 11 secs 
+Phase 2.7  Design Feasibility Check (Checksum:288d577) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:eef1b47e) REAL time: 11 secs 
+Phase 3.31  Local Placement Optimization (Checksum:288d577) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:15b722bb) REAL time: 16 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:8c62984c) REAL time: 6 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:15b722bb) REAL time: 16 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:8c62984c) REAL time: 6 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:15b722bb) REAL time: 16 secs 
+Phase 6.36  Local Placement Optimization (Checksum:8c62984c) REAL time: 6 secs 
 
 Phase 7.8  Global Placement
-..................
-....
-Phase 7.8  Global Placement (Checksum:dbe6e142) REAL time: 16 secs 
+...........................
+..
+Phase 7.8  Global Placement (Checksum:b528b05a) REAL time: 6 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:dbe6e142) REAL time: 16 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b528b05a) REAL time: 6 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:6f9b217c) REAL time: 18 secs 
+Phase 9.18  Placement Optimization (Checksum:a9e7ff92) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:6f9b217c) REAL time: 18 secs 
+Phase 10.5  Local Placement Optimization (Checksum:a9e7ff92) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 18 secs 
-Total CPU  time to Placer completion: 16 secs 
+Total REAL time to Placer completion: 7 secs 
+Total CPU  time to Placer completion: 7 secs 
 Writing design to file camera_to_display.ncd
 
 
@@ -104,28 +104,28 @@ Writing design to file camera_to_display.ncd
 Starting Router
 
 
-Phase  1  : 1766 unrouted;      REAL time: 38 secs 
+Phase  1  : 1302 unrouted;      REAL time: 15 secs 
 
-Phase  2  : 1581 unrouted;      REAL time: 39 secs 
+Phase  2  : 1142 unrouted;      REAL time: 16 secs 
 
-Phase  3  : 482 unrouted;      REAL time: 39 secs 
+Phase  3  : 266 unrouted;      REAL time: 16 secs 
 
-Phase  4  : 482 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  4  : 266 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 42 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
 Updating file: camera_to_display.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 WARNING:Route:455 - CLK Net:O_LCD_CLK_OBUF may have excessive skew because 
       0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 43 secs 
-Total CPU time to Router completion: 41 secs 
+Total REAL time to Router completion: 17 secs 
+Total CPU time to Router completion: 17 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -143,13 +143,13 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|      O_LCD_CLK_OBUF | BUFGMUX_X1Y10| No   |   74 |  0.198     |  0.378      |
+|      O_LCD_CLK_OBUF | BUFGMUX_X1Y10| No   |   49 |  0.184     |  0.371      |
 +---------------------+--------------+------+------+------------+-------------+
-|            cam1_clk |  BUFGMUX_X1Y0| No   |   27 |  0.104     |  0.370      |
+|            cam1_clk |  BUFGMUX_X1Y0| No   |   27 |  0.086     |  0.371      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_EXTEND_BOARD_WI |              |      |      |            |             |
 |TH_7SEG/sampling_clk |              |      |      |            |             |
-|                     |  BUFGMUX_X2Y1| No   |   26 |  0.034     |  0.222      |
+|                     |  BUFGMUX_X2Y1| No   |   26 |  0.054     |  0.226      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -171,12 +171,12 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_MAIN_DCM_CLK0_BUF = PERIOD TIMEGRP "MA | SETUP       |    22.900ns|    17.100ns|       0|           0
-  IN_DCM_CLK0_BUF" TS_I_CLK25 HIGH 50%      | HOLD        |     0.983ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  TS_CAM1_DCM_CLK0_BUF = PERIOD TIMEGRP "CA | SETUP       |    24.486ns|    15.514ns|       0|           0
-  M1_DCM_CLK0_BUF" TS_I_C1PCLK HIGH         | HOLD        |     1.153ns|            |       0|           0
+  TS_CAM1_DCM_CLK0_BUF = PERIOD TIMEGRP "CA | SETUP       |    26.755ns|    13.245ns|       0|           0
+  M1_DCM_CLK0_BUF" TS_I_C1PCLK HIGH         | HOLD        |     1.079ns|            |       0|           0
    50%                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MAIN_DCM_CLK0_BUF = PERIOD TIMEGRP "MA | SETUP       |    27.702ns|    12.298ns|       0|           0
+  IN_DCM_CLK0_BUF" TS_I_CLK25 HIGH 50%      | HOLD        |     1.233ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_I_C1PCLK = PERIOD TIMEGRP "I_C1PCLK" 4 | MINLOWPULSE |    30.000ns|    10.000ns|       0|           0
   0 ns HIGH 50%                             |             |            |            |        |            
@@ -196,8 +196,8 @@ Derived Constraints for TS_I_C1PCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_I_C1PCLK                    |     40.000ns|     10.000ns|     15.514ns|            0|            0|            0|        10435|
-| TS_CAM1_DCM_CLK0_BUF          |     40.000ns|     15.514ns|          N/A|            0|            0|        10435|            0|
+|TS_I_C1PCLK                    |     40.000ns|     10.000ns|     13.245ns|            0|            0|            0|        10435|
+| TS_CAM1_DCM_CLK0_BUF          |     40.000ns|     13.245ns|          N/A|            0|            0|        10435|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_I_CLK25
@@ -206,8 +206,8 @@ Derived Constraints for TS_I_CLK25
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_I_CLK25                     |     40.000ns|     10.000ns|     17.100ns|            0|            0|            0|        25291|
-| TS_MAIN_DCM_CLK0_BUF          |     40.000ns|     17.100ns|          N/A|            0|            0|        25291|            0|
+|TS_I_CLK25                     |     40.000ns|     10.000ns|     12.298ns|            0|            0|            0|         4145|
+| TS_MAIN_DCM_CLK0_BUF          |     40.000ns|     12.298ns|          N/A|            0|            0|         4145|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -219,10 +219,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 45 secs 
-Total CPU time to PAR completion: 43 secs 
+Total REAL time to PAR completion: 18 secs 
+Total CPU time to PAR completion: 18 secs 
 
-Peak Memory Usage:  318 MB
+Peak Memory Usage:  227 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

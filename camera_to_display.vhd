@@ -63,7 +63,7 @@ entity camera_to_display is
 		--VGA
 		O_VGA_CLK		: out std_logic; 
 		O_VGA_nBLANK	: out std_logic; --0:blanking time		1:valid signal	
-		O_VGA_nPSAVE	: out std_logic; --0:power off				1:power on
+		O_VGA_nPSAVE	: out std_logic; --0:power off			1:power on
 		O_VGA_nSYNC	: out std_logic; --0:green with sync	1:sync off
 		
 		--EXTEND_BOARD
@@ -121,27 +121,14 @@ architecture Behavioral of camera_to_display is
 	signal cam1_y_valid				: std_logic;
 	signal cam1_pixel_count			: std_logic_vector(9 downto 0);
 	signal cam1_line_count			: std_logic_vector(9 downto 0);
+	signal cam1_write_enable		: std_logic_vector(0 downto 0);
 	signal cam1_write_addr			: std_logic_vector(14 downto 0);
 	signal cam1_href_old				: std_logic;
 	
-	signal cam1_write_enable		: std_logic_vector(0 downto 0);
-
 	----------------------------------------------------------
 	--画像メモリ
 	----------------------------------------------------------
 	COMPONENT VRAM160x120x8
-		PORT (
-			clka : IN STD_LOGIC;
-			wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-			addra : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
-			dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-			clkb : IN STD_LOGIC;
-			addrb : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
-			doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
-	);
-	END COMPONENT;
-	
-	COMPONENT VRAM2
 		PORT (
 			clka : IN STD_LOGIC;
 			wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -164,11 +151,11 @@ architecture Behavioral of camera_to_display is
 	constant C_DISP_HEIGHT			: integer := 525;
 	constant C_DISP_VALID_WIDTH 	: integer := 640;
 	constant C_DISP_VALID_HEIGHT 	: integer := 480;
-	constant C_DISP_HSYNC_FP		: integer := 13;
+	constant C_DISP_HSYNC_WIDTH	: integer := 96;
 	constant C_DISP_HSYNC_BP		: integer := 44;
 	constant C_DISP_VSYNC_WIDTH	: integer := 3;
-	constant C_DISP_VSYNC_START	: integer := 35;
-
+	constant C_DISP_VSYNC_BP		: integer := 32;
+	
 	signal disp_clk				: std_logic;
 	signal disp_line_count		: std_logic_vector(9 downto 0);
 	signal disp_pixel_count		: std_logic_vector(9 downto 0);
@@ -176,14 +163,16 @@ architecture Behavioral of camera_to_display is
 	signal disp_hsync				: std_logic;
 	signal disp_enable			: std_logic;
 	signal disp_enable_8d		: std_logic_vector(7 downto 0);
-	signal disp_read_addr		: std_logic_vector(14 downto 0);
 	signal disp_y					: std_logic_vector(7 downto 0);
-
-	signal disp_y_peak			: std_logic_vector(7 downto 0);
-	signal disp_y_peak_old		: std_logic_vector(7 downto 0);
+	signal disp_read_addr		: std_logic_vector(14 downto 0);
 	
-	signal disp_write_enable	: std_logic_vector(0 downto 0);
-	signal disp_write_addr		: std_logic_vector(14 downto 0);
+	------- 追加した信号線 -------
+	signal disp_h_addr			: std_logic_vector(9 downto 0);
+	signal disp_v_addr			: std_logic_vector(9 downto 0);
+	signal disp_y_color        : std_logic_vector(7 downto 0);     -- LCDに表示される画面決定
+	signal disp_y_shadow       : std_logic_vector(9 downto 0);     -- 影の部分をカウントする
+	signal disp_shift          : integer range 0 to 512;           -- どれだけずらすか
+	signal disp_pixel_count_shift : std_logic_vector(9 downto 0);  -- ずらすためのしきい値
 	
 	-----------------------------------------
 	--EXTEND_BOARD
@@ -208,13 +197,6 @@ architecture Behavioral of camera_to_display is
 	signal ui_r_count : std_logic_vector(7 downto 0);
 	signal ui_y_count : std_logic_vector(7 downto 0);
 	signal ui_b_count : std_logic_vector(7 downto 0);
-	
-	-- 新たに追加した信号
-	signal disp_vsync_old         : std_logic;
-	signal disp_h_offset          : std_logic_vector(10 downto 0);
-	signal disp_v_offset          : std_logic_vector(10 downto 0);
-	signal disp_line_count_shift  : std_logic_vector(10 downto 0);
-	signal disp_pixel_count_shift : std_logic_vector(10 downto 0);
 	
 begin
 	---------------------------------------------------------
@@ -248,25 +230,12 @@ begin
 	O_C1RSTB <= (not rst_from_dcm1); --1:reset (all registers change to default value)
 	O_C1SCL	<= '0';											--Don't use --Serial interface clock(400khz)
 	IO_C1SDA	<= 'Z';											--High impedance --Serial interface data I/O
+	
 	--FPGAから供給したクロックの2倍のクロックを返す
 	--画素信号はI_C1HREF = '1'かつI_C1VSYNC = '0'の時に送られてくる
 	--画素信号はY U Y V の順番で送られてくる
-
 	process(cam1_clk)begin
 		if(rising_edge(cam1_clk))then
-			--輝度データの抜き出し+ピクセル数のカウント----------------------
-			if(I_C1HREF = '0')then
-				cam1_pixel_count	<= (others => '1');
-				cam1_y_valid		<= '0';
-			else
-				cam1_y_valid	<= not cam1_y_valid;
-				--偶数の場合輝度データを抜き出し
-				if(cam1_y_valid = '0')then
-						cam1_pixel_count	<= cam1_pixel_count + 1;
-						cam1_y	<= I_C1D(9 downto 2);
-				end if;
-			end if;
-			
 			--走査線数のカウント------------------------------------------
 			cam1_href_old <= I_C1HREF;
 			if(I_C1VSYNC = '1')then
@@ -276,18 +245,31 @@ begin
 					cam1_line_count	<= cam1_line_count + 1;
 				end if;
 			end if;
+
+			--輝度データの抜き出し+ピクセル数のカウント----------------------
+			if(I_C1HREF = '0')then
+				cam1_y_valid		<= '0';
+				cam1_pixel_count	<= (others => '1');
+			else
+				cam1_y_valid		<= not cam1_y_valid;
+				--偶数の場合輝度データを抜き出し
+				if(cam1_y_valid = '0')then
+					cam1_pixel_count <= cam1_pixel_count + 1;
+					cam1_y	<= I_C1D(9 downto 2);
+				end if;
+			end if;		
 		end if;
 	end process;
 	
 	--書き込み用のアドレスの作成
-	--cam1_line_countの下位2bitを切ることで4で割る，同様にcam1_pixel_countの下位2bitを切ることで8で割る
+	--cam1_line_countの下位2bitを切ることで4で割る，同様にcam1_data_countの下位3bitを切ることで8で割る
 	cam1_write_addr <= (cam1_line_count(9 downto 2) * CONV_std_logic_vector(C_MEMORY_WIDTH,8)) + cam1_pixel_count(9 downto 2);
 	--書き込みイネーブル信号の作成
 	--cam1_line_count(1 downto 0) = "00"は4回に1回
-	--cam1_pixel_count(1 downto 0) = "00"は4回に1回
+	--cam1_data_count(2 downto 0) = "001"は8回に1回，また"000"の時にデータをレジスタ代入しているのでその後の"001"でメモリに書き込む
 	cam1_write_enable <= 		"1" 	when ((cam1_line_count(1 downto 0) = "00") and (cam1_pixel_count(1 downto 0) = "00"))
 								else	"0";
-								
+	
 	--------------------------------------------------------
 	--画像メモリ
 	--------------------------------------------------------
@@ -303,21 +285,6 @@ begin
 		clkb	=>	disp_clk,
 		addrb	=>	disp_read_addr,
 		doutb	=>	disp_y
-	);
-
-	--Peak hold用VRAM
-	VRAM_S : VRAM2
-	PORT MAP (
-		--ピーク値の書き込み
-		clka	=>	disp_clk,
-		wea	=>	disp_write_enable,
-		addra	=>	disp_write_addr,
-		dina 	=>	disp_y_peak,
-		
-		--ピーク値の読み出しの読み出し
-		clkb	=>	disp_clk,
-		addrb	=>	disp_read_addr,
-		doutb	=>	disp_y_peak_old
 	);
 	---------------------------------------------------------
 	--ディスプレイ
@@ -341,7 +308,7 @@ begin
 	process(disp_clk)begin
 		if(rising_edge(disp_clk))then
 			if(rst_from_dcm1 = '1')then
-				disp_pixel_count <= (others => '0');
+				disp_pixel_count  <= (others => '0');
 				disp_line_count 	<= (others => '0');
 			else
 				--ピクセルのカウント
@@ -365,7 +332,7 @@ begin
 		if(rising_edge(disp_clk))then
 			--VSYNC generator
 			-- 490　- 492 の3本がVSYNC期間
-			if(C_DISP_HEIGHT - C_DISP_VSYNC_START <= disp_line_count and disp_line_count < C_DISP_HEIGHT - C_DISP_VSYNC_START + C_DISP_VSYNC_WIDTH)then
+			if(C_DISP_HEIGHT - C_DISP_VSYNC_WIDTH - C_DISP_VSYNC_BP <= disp_line_count and disp_line_count < C_DISP_HEIGHT - C_DISP_VSYNC_BP)then
 				disp_vsync <= '0';
 			else
 				disp_vsync <= '1';
@@ -373,7 +340,7 @@ begin
 			
 			--HSYNC generator
 			-- 653 - 748 の96ピクセルがHSYNC期間
-			if(C_DISP_VALID_WIDTH + C_DISP_HSYNC_FP <= disp_pixel_count and disp_pixel_count < C_DISP_WIDTH - C_DISP_HSYNC_BP)then
+			if(C_DISP_WIDTH - C_DISP_HSYNC_WIDTH - C_DISP_HSYNC_BP <= disp_pixel_count and disp_pixel_count < C_DISP_WIDTH - C_DISP_HSYNC_BP)then
 				disp_hsync <= '0';
 			else
 				disp_hsync <= '1';
@@ -391,51 +358,54 @@ begin
 		end if;
 	end process;
 	
-	--Read Address Calculator
-	disp_read_addr <= (disp_line_count(9 downto 2) * CONV_std_logic_vector(C_MEMORY_WIDTH,8)) + disp_pixel_count(9 downto 2);
-
-	--Write Address Calculator
+	-- Read Address Calculator
+	-- 画面をシフトさせる処理
+	disp_pixel_count_shift <= disp_pixel_count + disp_shift;
 	process(disp_clk)begin
 		if(rising_edge(disp_clk))then
-			disp_write_addr	<= disp_read_addr;
-			if(disp_line_count(1 downto 0) = "00" and disp_pixel_count(1 downto 0) ="10")then
-				if(disp_enable_8d(1) = '1')then
-					disp_write_enable <="1";
-				end if;
+			disp_v_addr <= "00" & disp_line_count(9 downto 2);
+			-- メモリサイズとの比較
+			if(disp_pixel_count_shift(9 downto 2) < C_MEMORY_WIDTH)then
+				disp_h_addr <= "00" & disp_pixel_count_shift(9 downto 2);
+				-- カメラ画像そのまま
+				disp_y_color <= disp_y;
+			-- ずれる部分
 			else
-				disp_write_enable <= "0";
+				-- 大きすぎるので、メモリサイズ分減算
+				disp_h_addr <= disp_pixel_count_shift(9 downto 2) - C_MEMORY_WIDTH;
+				-- 黒に塗りつぶす
+				disp_y_color <= X"00";
 			end if;
 		end if;
 	end process;
 	
+	-- ずらす位置を決める処理
+	process(disp_clk)begin
+		if(rising_edge(disp_clk))then
+			-- カメラに対して、横中間部分で判別
+			if(disp_line_count > 260 and disp_line_count < 264)then
+				-- しきい値を超える(覆われていない)
+				if(disp_y > 40)then
+					-- 画像はズレない
+					disp_shift <= 0;
+				-- しきい値を超えない(覆われている)
+				else
+					disp_shift <= 300;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	disp_read_addr <= (disp_v_addr * CONV_std_logic_vector(C_MEMORY_WIDTH,8)) + disp_h_addr;
 	
 	--RGB_substitution
-	process(disp_clk)begin
-		if(rising_edge(disp_clk))then
-
-			if(disp_y > disp_y_peak_old)then
-				disp_y_peak <= disp_y;
-			else
-				if(disp_y_peak_old >= ui_r_count)then
-					disp_y_peak <= disp_y_peak_old - ui_r_count;
-				else
-					disp_y_peak <= (others => '0');
-				end if;
-			end if;
-		end if;
-	end process;
-	
-	O_VGA_R		<= disp_y_peak;
-	O_VGA_G		<= disp_y_peak;
-	O_VGA_B		<= disp_y_peak;
+	O_VGA_R		<= disp_y_color;
+	O_VGA_G		<= disp_y_color;
+	O_VGA_B		<= disp_y_color;
 
 	--LCD_ENBは有効画素を表しているため、
 	--MEMORYからの読み出しタイミングなどと同期をとる必要がある。
 	--そこでLCD_ENBに適切なディレイを与える。
-	--LCD_ENB is delayed
-	--ADDR calculator			= 0
-	--memory latency 			= 1
-	--RGB substitution		= 1	total 2delay
 	--disp_enableで1delay disp_enable_8d(0)で2delay disp_enable_8d(1)で3delay...
 	O_LCD_ENB		<= disp_enable_8d(0); 
 	O_VGA_nBLANK	<= disp_enable_8d(0); --0: 1:active area
@@ -450,13 +420,11 @@ begin
 		I_RST => rst_from_dcm1,
 		I_SWITCH_RYB => I_EXTEND_SWITCH_RYB,
 		O_SWITCH_RYB_DECHAT => ui_switch_ryb_dechat,
-		O_LED_RYB => ui_led_ryb,
+		O_LED_RYB => O_EXTEND_LED_RYB,
 		O_R_COUNT => ui_r_count,
 		O_Y_COUNT => ui_y_count,
 		O_B_COUNT => ui_b_count,
 		O_7SEG_LED => O_EXTEND_7SEG_LED,
 		O_7SEG_LED_SELECT => O_EXTEND_7SEG_LED_SELECT
 	);
-	O_EXTEND_LED_RYB	<= ui_led_ryb;
 end Behavioral;
-

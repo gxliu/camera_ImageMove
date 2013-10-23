@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\Chelly\GitHub\camera_ImageMove//camera_ImageMove -x xcf04s -u 00000000 C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.bit 
+
+PROM C:\Users\Chelly\GitHub\camera_ImageMove\camera_ImageMove.prm map: WED 23 OCT 16:53:44 2013
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 00b32133
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0007:5393     Oct 23 16:49:43 2013 C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.bit

@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM2.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Chelly/GitHub/camera_ImageMove/ipcore_dir/VRAM2.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

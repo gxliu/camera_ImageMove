@@ -1,4 +1,4 @@
-Release 14.5 Map P.58f (nt64)
+Release 14.5 Map P.58f (nt)
 Xilinx Mapping Report File for Design 'camera_to_display'
 
 Design Information
@@ -9,38 +9,38 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : TUE 27 AUG 16:5:10 2013
+Mapped Date    : WED 23 OCT 16:49:5 2013
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    3
 Logic Utilization:
-  Number of Slice Flip Flops:           144 out of  17,344    1%
-  Number of 4 input LUTs:               177 out of  17,344    1%
+  Number of Slice Flip Flops:           133 out of  17,344    1%
+  Number of 4 input LUTs:               147 out of  17,344    1%
 Logic Distribution:
-  Number of occupied Slices:            152 out of   8,672    1%
-    Number of Slices containing only related logic:     152 out of     152 100%
-    Number of Slices containing unrelated logic:          0 out of     152   0%
+  Number of occupied Slices:            135 out of   8,672    1%
+    Number of Slices containing only related logic:     135 out of     135 100%
+    Number of Slices containing unrelated logic:          0 out of     135   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         249 out of  17,344    1%
-    Number used as logic:               177
-    Number used as a route-thru:         72
+  Total Number of 4 input LUTs:         223 out of  17,344    1%
+    Number used as logic:               147
+    Number used as a route-thru:         76
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 71 out of     250   28%
-  Number of RAMB16s:                     20 out of      28   71%
+  Number of RAMB16s:                     10 out of      28   35%
   Number of BUFGMUXs:                     4 out of      24   16%
   Number of DCMs:                         2 out of       8   25%
   Number of MULT18X18SIOs:                2 out of      28    7%
 
-Average Fanout of Non-Clock Nets:                3.80
+Average Fanout of Non-Clock Nets:                3.15
 
-Peak Memory Usage:  256 MB
-Total REAL time to MAP completion:  8 secs 
-Total CPU time to MAP completion:   6 secs 
+Peak Memory Usage:  198 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 
@@ -101,8 +101,8 @@ INFO:MapLib:562 - No environment variables are currently set.
 Section 4 - Removed Logic Summary
 ---------------------------------
    1 block(s) removed
-   6 block(s) optimized away
-   3 signal(s) removed
+   4 block(s) optimized away
+   2 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -120,14 +120,11 @@ the lines that are least indented (begin at the leftmost edge).
 Loadless block "MAIN_DCM/CLKFX_BUFG_INST" (CKBUF) removed.
  The signal "MAIN_DCM/CLKFX_BUF" is loadless and has been removed.
 The signal "VRAM1/N1" is sourceless and has been removed.
-The signal "VRAM_S/N0" is sourceless and has been removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		VRAM1/XST_GND
 VCC 		VRAM1/XST_VCC
-GND 		VRAM_S/XST_GND
-VCC 		VRAM_S/XST_VCC
 GND 		XST_GND
 VCC 		XST_VCC
 

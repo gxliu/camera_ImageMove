@@ -1,16 +1,16 @@
-Release 14.5 - xst P.58f (nt64)
+Release 14.5 - xst P.58f (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: camera_to_display.prj
 
@@ -107,17 +107,15 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM1.vhd" in Library work.
+Compiling vhdl file "C:/Users/Chelly/GitHub/camera_ImageMove/DCM1.vhd" in Library work.
 Architecture behavioral of Entity dcm1 is up to date.
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM2.vhd" in Library work.
+Compiling vhdl file "C:/Users/Chelly/GitHub/camera_ImageMove/DCM2.vhd" in Library work.
 Architecture behavioral of Entity dcm2 is up to date.
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM160x120x8.vhd" in Library work.
+Compiling vhdl file "C:/Users/Chelly/GitHub/camera_ImageMove/ipcore_dir/VRAM160x120x8.vhd" in Library work.
 Architecture vram160x120x8_a of Entity vram160x120x8 is up to date.
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/ipcore_dir/VRAM2.vhd" in Library work.
-Architecture vram2_a of Entity vram2 is up to date.
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/EXTEND_BOARD_WITH_7SEG.vhd" in Library work.
+Compiling vhdl file "C:/Users/Chelly/GitHub/camera_ImageMove/EXTEND_BOARD_WITH_7SEG.vhd" in Library work.
 Architecture behavioral of Entity extend_board_with_7seg is up to date.
-Compiling vhdl file "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" in Library work.
+Compiling vhdl file "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" in Library work.
 Entity <camera_to_display> compiled.
 Entity <camera_to_display> (Architecture <behavioral>) compiled.
 
@@ -137,10 +135,10 @@ Analyzing hierarchy for entity <EXTEND_BOARD_WITH_7SEG> in library <work> (archi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <camera_to_display> in library <work> (Architecture <behavioral>).
-WARNING:Xst:1610 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 277: Width mismatch. <cam1_write_addr> has a width of 15 bits but assigned expression is 16-bit wide.
-WARNING:Xst:2211 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 287: Instantiating black box module <VRAM160x120x8>.
-WARNING:Xst:2211 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 302: Instantiating black box module <VRAM2>.
-WARNING:Xst:1610 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 388: Width mismatch. <disp_read_addr> has a width of 15 bits but assigned expression is 16-bit wide.
+WARNING:Xst:1610 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 266: Width mismatch. <cam1_write_addr> has a width of 15 bits but assigned expression is 16-bit wide.
+WARNING:Xst:2211 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 276: Instantiating black box module <VRAM160x120x8>.
+WARNING:Xst:1610 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 375: Width mismatch. <disp_h_addr> has a width of 10 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 399: Width mismatch. <disp_read_addr> has a width of 15 bits but assigned expression is 18-bit wide.
 Entity <camera_to_display> analyzed. Unit <camera_to_display> generated.
 
 Analyzing Entity <DCM1> in library <work> (Architecture <behavioral>).
@@ -199,7 +197,7 @@ Performing bidirectional port resolution...
 INFO:Xst:2561 - Always blocking tristate driving signal <IO_C1SDA> in unit <camera_to_display> is removed.
 
 Synthesizing Unit <EXTEND_BOARD_WITH_7SEG>.
-    Related source file is "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/EXTEND_BOARD_WITH_7SEG.vhd".
+    Related source file is "C:/Users/Chelly/GitHub/camera_ImageMove/EXTEND_BOARD_WITH_7SEG.vhd".
     Found 16x8-bit ROM for signal <led_high>.
     Found 4x3-bit ROM for signal <O_LED_RYB>.
     Found 16x8-bit ROM for signal <led_low>.
@@ -225,64 +223,72 @@ Unit <EXTEND_BOARD_WITH_7SEG> synthesized.
 
 
 Synthesizing Unit <DCM1>.
-    Related source file is "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM1.vhd".
+    Related source file is "C:/Users/Chelly/GitHub/camera_ImageMove/DCM1.vhd".
 Unit <DCM1> synthesized.
 
 
 Synthesizing Unit <DCM2>.
-    Related source file is "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/DCM2.vhd".
+    Related source file is "C:/Users/Chelly/GitHub/camera_ImageMove/DCM2.vhd".
 Unit <DCM2> synthesized.
 
 
 Synthesizing Unit <camera_to_display>.
-    Related source file is "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd".
+    Related source file is "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd".
 WARNING:Xst:647 - Input <I_C1D<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2565 - Inout <IO_C1SDA> is never assigned.
 WARNING:Xst:646 - Signal <ui_y_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ui_switch_ryb_dechat> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ui_r_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ui_led_ryb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ui_b_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <rst_from_dcm2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <disp_y_shadow> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <disp_pixel_count_shift<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <disp_enable_8d<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk_raw2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk_raw1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk_fx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:643 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 277: The result of a 8x8-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-WARNING:Xst:643 - "C:/workspace/fpga/3rd_day/camera_practice_0_grayscale/camera_to_display.vhd" line 388: The result of a 8x8-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 266: The result of a 8x8-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.vhd" line 399: The result of a 10x8-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
     Found 1-bit register for signal <cam1_href_old>.
     Found 10-bit up counter for signal <cam1_line_count>.
     Found 10-bit up counter for signal <cam1_pixel_count>.
     Found 15-bit adder for signal <cam1_write_addr>.
-    Found 8x8-bit multiplier for signal <cam1_write_addr$mult0000> created at line 277.
+    Found 8x8-bit multiplier for signal <cam1_write_addr$mult0000> created at line 266.
     Found 8-bit register for signal <cam1_y>.
     Found 1-bit register for signal <cam1_y_valid>.
     Found 1-bit register for signal <disp_enable>.
-    Found 11-bit comparator less for signal <disp_enable$cmp_lt0000> created at line 377.
-    Found 11-bit comparator less for signal <disp_enable$cmp_lt0001> created at line 377.
+    Found 11-bit comparator less for signal <disp_enable$cmp_lt0000> created at line 351.
+    Found 11-bit comparator less for signal <disp_enable$cmp_lt0001> created at line 351.
     Found 8-bit register for signal <disp_enable_8d>.
+    Found 10-bit register for signal <disp_h_addr>.
+    Found 8-bit subtractor for signal <disp_h_addr$sub0000> created at line 375.
     Found 1-bit register for signal <disp_hsync>.
-    Found 11-bit comparator greatequal for signal <disp_hsync$cmp_le0000> created at line 369.
-    Found 11-bit comparator less for signal <disp_hsync$cmp_lt0000> created at line 369.
+    Found 11-bit comparator greatequal for signal <disp_hsync$cmp_le0000> created at line 343.
+    Found 11-bit comparator less for signal <disp_hsync$cmp_lt0000> created at line 343.
     Found 10-bit up counter for signal <disp_line_count>.
-    Found 11-bit comparator greatequal for signal <disp_line_count$cmp_ge0000> created at line 341.
-    Found 11-bit comparator greatequal for signal <disp_line_count$cmp_ge0001> created at line 344.
+    Found 11-bit comparator greatequal for signal <disp_line_count$cmp_ge0000> created at line 315.
+    Found 11-bit comparator greatequal for signal <disp_line_count$cmp_ge0001> created at line 318.
     Found 10-bit up counter for signal <disp_pixel_count>.
+    Found 10-bit adder for signal <disp_pixel_count_shift>.
     Found 15-bit adder for signal <disp_read_addr>.
-    Found 8x8-bit multiplier for signal <disp_read_addr$mult0000> created at line 388.
+    Found 10x8-bit multiplier for signal <disp_read_addr$mult0000> created at line 399.
+    Found 9-bit register for signal <disp_shift>.
+    Found 11-bit comparator greater for signal <disp_shift$cmp_gt0000> created at line 386.
+    Found 9-bit comparator greater for signal <disp_shift$cmp_gt0001> created at line 388.
+    Found 11-bit comparator less for signal <disp_shift$cmp_lt0000> created at line 386.
+    Found 10-bit register for signal <disp_v_addr>.
     Found 1-bit register for signal <disp_vsync>.
-    Found 11-bit comparator greatequal for signal <disp_vsync$cmp_le0000> created at line 361.
-    Found 11-bit comparator less for signal <disp_vsync$cmp_lt0000> created at line 361.
-    Found 15-bit register for signal <disp_write_addr>.
-    Found 1-bit register for signal <disp_write_enable<0>>.
-    Found 8-bit register for signal <disp_y_peak>.
-    Found 8-bit subtractor for signal <disp_y_peak$addsub0000> created at line 413.
-    Found 8-bit comparator greatequal for signal <disp_y_peak$cmp_ge0000> created at line 412.
-    Found 8-bit comparator greater for signal <disp_y_peak$cmp_gt0000> created at line 409.
+    Found 11-bit comparator greatequal for signal <disp_vsync$cmp_le0000> created at line 335.
+    Found 11-bit comparator less for signal <disp_vsync$cmp_lt0000> created at line 335.
+    Found 8-bit register for signal <disp_y_color>.
+    Found 9-bit comparator less for signal <disp_y_color$cmp_lt0000> created at line 368.
     Summary:
 	inferred   4 Counter(s).
-	inferred  45 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
 	inferred   2 Multiplier(s).
-	inferred  10 Comparator(s).
+	inferred  12 Comparator(s).
 Unit <camera_to_display> synthesized.
 
 
@@ -294,8 +300,10 @@ Macro Statistics
  16x8-bit ROM                                          : 2
  4x3-bit ROM                                           : 1
 # Multipliers                                          : 2
- 8x8-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 3
+ 10x8-bit multiplier                                   : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 1
  15-bit adder                                          : 2
  8-bit subtractor                                      : 1
 # Counters                                             : 11
@@ -304,15 +312,17 @@ Macro Statistics
  2-bit up counter                                      : 1
  4-bit up counter                                      : 1
  8-bit updown counter                                  : 3
-# Registers                                            : 15
- 1-bit register                                        : 11
- 15-bit register                                       : 1
+# Registers                                            : 16
+ 1-bit register                                        : 10
+ 10-bit register                                       : 2
  8-bit register                                        : 3
-# Comparators                                          : 10
+ 9-bit register                                        : 1
+# Comparators                                          : 12
  11-bit comparator greatequal                          : 4
- 11-bit comparator less                                : 4
- 8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 1
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 
@@ -323,15 +333,33 @@ Macro Statistics
 =========================================================================
 
 Reading core <ipcore_dir/VRAM160x120x8.ngc>.
-Reading core <ipcore_dir/VRAM2.ngc>.
 Loading core <VRAM160x120x8> for timing and area information for instance <VRAM1>.
-Loading core <VRAM2> for timing and area information for instance <VRAM_S>.
+WARNING:Xst:1293 - FF/Latch <disp_shift_0> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_1> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_4> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_6> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_7> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <disp_h_addr_8> (without init value) has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <disp_h_addr_9> (without init value) has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <disp_v_addr_8> (without init value) has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <disp_v_addr_9> (without init value) has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <disp_enable_8d_1> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_2> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_3> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_4> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_5> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_6> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_7> of sequential type is unconnected in block <camera_to_display>.
+WARNING:Xst:2404 -  FFs/Latches <disp_v_addr<9:8>> (without init value) have a constant value of 0 in block <camera_to_display>.
+WARNING:Xst:2404 -  FFs/Latches <disp_h_addr<9:8>> (without init value) have a constant value of 0 in block <camera_to_display>.
+
+Synthesizing (advanced) Unit <camera_to_display>.
+	Found pipelined multiplier on signal <disp_read_addr_mult0000>:
+		- 1 pipeline level(s) found in a register on signal <disp_v_addr>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_disp_read_addr_mult0000 by adding 1 register level(s).
+Unit <camera_to_display> synthesized (advanced).
+WARNING:Xst:2677 - Node <disp_enable_8d_1> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_2> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_3> of sequential type is unconnected in block <camera_to_display>.
 WARNING:Xst:2677 - Node <disp_enable_8d_4> of sequential type is unconnected in block <camera_to_display>.
@@ -347,8 +375,10 @@ Macro Statistics
  16x8-bit ROM                                          : 2
  4x3-bit ROM                                           : 1
 # Multipliers                                          : 2
- 8x8-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 3
+ 10x8-bit registered multiplier                        : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 1
  15-bit adder                                          : 2
  8-bit subtractor                                      : 1
 # Counters                                             : 11
@@ -359,11 +389,12 @@ Macro Statistics
  8-bit updown counter                                  : 3
 # Registers                                            : 44
  Flip-Flops                                            : 44
-# Comparators                                          : 10
+# Comparators                                          : 12
  11-bit comparator greatequal                          : 4
- 11-bit comparator less                                : 4
- 8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 1
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 
@@ -372,6 +403,12 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1293 - FF/Latch <disp_shift_0> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_1> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_4> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_6> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <disp_shift_7> has a constant value of 0 in block <camera_to_display>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <disp_shift_2> in Unit <camera_to_display> is equivalent to the following 3 FFs/Latches, which will be removed : <disp_shift_3> <disp_shift_5> <disp_shift_8> 
 
 Optimizing unit <camera_to_display> ...
 
@@ -387,8 +424,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 138
- Flip-Flops                                            : 138
+# Registers                                            : 130
+ Flip-Flops                                            : 130
 
 =========================================================================
 
@@ -417,30 +454,30 @@ Design Statistics
 # IOs                              : 71
 
 Cell Usage :
-# BELS                             : 537
-#      GND                         : 3
-#      INV                         : 18
-#      LUT1                        : 70
-#      LUT2                        : 75
-#      LUT2_L                      : 1
+# BELS                             : 491
+#      GND                         : 2
+#      INV                         : 16
+#      LUT1                        : 74
+#      LUT2                        : 56
+#      LUT2_L                      : 2
 #      LUT3                        : 14
-#      LUT4                        : 77
-#      LUT4_D                      : 1
-#      LUT4_L                      : 2
-#      MUXCY                       : 130
+#      LUT4                        : 63
+#      LUT4_D                      : 2
+#      LUT4_L                      : 3
+#      MUXCY                       : 114
 #      MUXF5                       : 17
-#      VCC                         : 3
+#      VCC                         : 2
 #      XORCY                       : 126
-# FlipFlops/Latches                : 144
-#      FD                          : 27
-#      FDE                         : 39
-#      FDR                         : 38
-#      FDRE                        : 26
+# FlipFlops/Latches                : 133
+#      FD                          : 10
+#      FDE                         : 37
+#      FDR                         : 47
+#      FDRE                        : 25
 #      FDRS                        : 4
 #      FDSE                        : 10
-# RAMS                             : 20
-#      RAMB16_S1_S1                : 16
-#      RAMB16_S4_S4                : 4
+# RAMS                             : 10
+#      RAMB16_S1_S1                : 8
+#      RAMB16_S4_S4                : 2
 # Clock Buffers                    : 5
 #      BUFG                        : 5
 # IO Buffers                       : 68
@@ -458,12 +495,12 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-4 
 
- Number of Slices:                      140  out of   8672     1%  
- Number of Slice Flip Flops:            144  out of  17344     0%  
- Number of 4 input LUTs:                258  out of  17344     1%  
+ Number of Slices:                      125  out of   8672     1%  
+ Number of Slice Flip Flops:            133  out of  17344     0%  
+ Number of 4 input LUTs:                230  out of  17344     1%  
  Number of IOs:                          71
  Number of bonded IOBs:                  68  out of    250    27%  
- Number of BRAMs:                        20  out of     28    71%  
+ Number of BRAMs:                        10  out of     28    35%  
  Number of MULT18X18SIOs:                 2  out of     28     7%  
  Number of GCLKs:                         5  out of     24    20%  
  Number of DCMs:                          2  out of      8    25%  
@@ -489,7 +526,7 @@ Clock Information:
 -----------------------------------------+--------------------------+-------+
 Clock Signal                             | Clock buffer(FF name)    | Load  |
 -----------------------------------------+--------------------------+-------+
-I_CLK25                                  | MAIN_DCM/DCM_SP_INST:CLK0| 86    |
+I_CLK25                                  | MAIN_DCM/DCM_SP_INST:CLK0| 66    |
 I_C1PCLK                                 | CAM1_DCM/DCM_SP_INST:CLK0| 40    |
 Inst_EXTEND_BOARD_WITH_7SEG/sampling_clk1| BUFG                     | 48    |
 -----------------------------------------+--------------------------+-------+
@@ -502,7 +539,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 11.735ns (Maximum Frequency: 85.215MHz)
+   Minimum period: 11.145ns (Maximum Frequency: 89.726MHz)
    Minimum input arrival time before clock: 4.353ns
    Maximum output required time after clock: 8.643ns
    Maximum combinational path delay: No path found
@@ -513,32 +550,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'I_CLK25'
-  Clock period: 11.735ns (frequency: 85.215MHz)
-  Total number of paths / destination ports: 25297 / 561
+  Clock period: 10.258ns (frequency: 97.485MHz)
+  Total number of paths / destination ports: 4151 / 249
 -------------------------------------------------------------------------
-Delay:               11.735ns (Levels of Logic = 8)
-  Source:            disp_line_count_9 (FF)
-  Destination:       VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram (RAM)
+Delay:               10.258ns (Levels of Logic = 7)
+  Source:            Mmult_disp_read_addr_mult0000 (MULT)
+  Destination:       VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram (RAM)
   Source Clock:      I_CLK25 rising
   Destination Clock: I_CLK25 rising
 
-  Data Path: disp_line_count_9 to VRAM_S/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram
+  Data Path: Mmult_disp_read_addr_mult0000 to VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.591   0.633  disp_line_count_9 (disp_line_count_9)
-     MULT18X18SIO:A7->P10    1   4.602   0.595  Mmult_disp_read_addr_mult0000 (disp_read_addr_mult0000<10>)
+     MULT18X18SIO:CLK->P10    1   4.691   0.595  Mmult_disp_read_addr_mult0000 (disp_read_addr_mult0000<10>)
      LUT1:I0->O            1   0.704   0.000  Madd_disp_read_addr_cy<10>_rt (Madd_disp_read_addr_cy<10>_rt)
      MUXCY:S->O            1   0.464   0.000  Madd_disp_read_addr_cy<10> (Madd_disp_read_addr_cy<10>)
      MUXCY:CI->O           1   0.059   0.000  Madd_disp_read_addr_cy<11> (Madd_disp_read_addr_cy<11>)
      MUXCY:CI->O           1   0.059   0.000  Madd_disp_read_addr_cy<12> (Madd_disp_read_addr_cy<12>)
-     XORCY:CI->O          21   0.804   1.303  Madd_disp_read_addr_xor<13> (disp_read_addr<13>)
-     begin scope: 'VRAM_S'
-     LUT3:I0->O            2   0.704   0.447  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ADDR[2]_PWR_16_o_equal_5_o<2>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/enb_array<4>)
+     XORCY:CI->O          10   0.804   0.961  Madd_disp_read_addr_xor<13> (disp_read_addr<13>)
+     begin scope: 'VRAM1'
+     LUT3:I1->O            2   0.704   0.447  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT_4_cmp_eq00001 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT_4_cmp_eq0000)
      RAMB16_S4_S4:ENB          0.770          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram
     ----------------------------------------
-    Total                     11.735ns (8.757ns logic, 2.978ns route)
-                                       (74.6% logic, 25.4% route)
+    Total                     10.258ns (8.255ns logic, 2.003ns route)
+                                       (80.5% logic, 19.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'I_C1PCLK'
@@ -546,17 +582,17 @@ Timing constraint: Default period analysis for Clock 'I_C1PCLK'
   Total number of paths / destination ports: 10435 / 221
 -------------------------------------------------------------------------
 Delay:               11.145ns (Levels of Logic = 8)
-  Source:            cam1_line_count_2 (FF)
+  Source:            cam1_line_count_3 (FF)
   Destination:       VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram (RAM)
   Source Clock:      I_C1PCLK rising
   Destination Clock: I_C1PCLK rising
 
-  Data Path: cam1_line_count_2 to VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram
+  Data Path: cam1_line_count_3 to VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_noinit.ram/dpram.dp4x4.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.591   0.447  cam1_line_count_2 (cam1_line_count_2)
-     MULT18X18SIO:A0->P10    1   4.602   0.595  Mmult_cam1_write_addr_mult0000 (cam1_write_addr_mult0000<10>)
+     FDRE:C->Q             2   0.591   0.447  cam1_line_count_3 (cam1_line_count_3)
+     MULT18X18SIO:A1->P10    1   4.602   0.595  Mmult_cam1_write_addr_mult0000 (cam1_write_addr_mult0000<10>)
      LUT1:I0->O            1   0.704   0.000  Madd_cam1_write_addr_cy<10>_rt (Madd_cam1_write_addr_cy<10>_rt)
      MUXCY:S->O            1   0.464   0.000  Madd_cam1_write_addr_cy<10> (Madd_cam1_write_addr_cy<10>)
      MUXCY:CI->O           1   0.059   0.000  Madd_cam1_write_addr_cy<11> (Madd_cam1_write_addr_cy<11>)
@@ -571,28 +607,28 @@ Delay:               11.145ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_EXTEND_BOARD_WITH_7SEG/sampling_clk1'
-  Clock period: 7.141ns (frequency: 140.036MHz)
+  Clock period: 7.252ns (frequency: 137.893MHz)
   Total number of paths / destination ports: 1467 / 94
 -------------------------------------------------------------------------
-Delay:               7.141ns (Levels of Logic = 4)
-  Source:            Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_13 (FF)
-  Destination:       Inst_EXTEND_BOARD_WITH_7SEG/y_count_7 (FF)
+Delay:               7.252ns (Levels of Logic = 4)
+  Source:            Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_2 (FF)
+  Destination:       Inst_EXTEND_BOARD_WITH_7SEG/b_count_7 (FF)
   Source Clock:      Inst_EXTEND_BOARD_WITH_7SEG/sampling_clk1 rising
   Destination Clock: Inst_EXTEND_BOARD_WITH_7SEG/sampling_clk1 rising
 
-  Data Path: Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_13 to Inst_EXTEND_BOARD_WITH_7SEG/y_count_7
+  Data Path: Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_2 to Inst_EXTEND_BOARD_WITH_7SEG/b_count_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q             3   0.591   0.706  Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_13 (Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_13)
-     LUT4:I0->O            1   0.704   0.499  Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001126 (Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001126)
-     LUT4:I1->O            1   0.704   0.595  Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001165 (Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001165)
+     FDR:C->Q              3   0.591   0.706  Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_2 (Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_2)
+     LUT4:I0->O            1   0.704   0.499  Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_cmp_eq00005 (Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_cmp_eq00005)
+     LUT4:I1->O            3   0.704   0.706  Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_cmp_eq000030 (Inst_EXTEND_BOARD_WITH_7SEG/repeat_timer_cmp_eq0000)
      LUT4_D:I0->O          2   0.704   0.622  Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001195 (Inst_EXTEND_BOARD_WITH_7SEG/N26)
-     LUT3:I0->O            8   0.704   0.757  Inst_EXTEND_BOARD_WITH_7SEG/y_count_not00011 (Inst_EXTEND_BOARD_WITH_7SEG/y_count_not0001)
-     FDE:CE                    0.555          Inst_EXTEND_BOARD_WITH_7SEG/y_count_0
+     LUT3:I0->O            8   0.704   0.757  Inst_EXTEND_BOARD_WITH_7SEG/b_count_not00012 (Inst_EXTEND_BOARD_WITH_7SEG/b_count_not0001)
+     FDE:CE                    0.555          Inst_EXTEND_BOARD_WITH_7SEG/b_count_0
     ----------------------------------------
-    Total                      7.141ns (3.962ns logic, 3.179ns route)
-                                       (55.5% logic, 44.5% route)
+    Total                      7.252ns (3.962ns logic, 3.290ns route)
+                                       (54.6% logic, 45.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'I_C1PCLK'
@@ -670,7 +706,7 @@ Offset:              8.643ns (Levels of Logic = 5)
      FDRE:C->Q            24   0.591   1.427  Inst_EXTEND_BOARD_WITH_7SEG/selected_reg_1 (Inst_EXTEND_BOARD_WITH_7SEG/selected_reg_1)
      LUT4:I0->O            1   0.704   0.000  Inst_EXTEND_BOARD_WITH_7SEG/Mmux_selected_count81 (Inst_EXTEND_BOARD_WITH_7SEG/Mmux_selected_count8)
      MUXF5:I1->O           7   0.321   0.883  Inst_EXTEND_BOARD_WITH_7SEG/Mmux_selected_count8_f5 (Inst_EXTEND_BOARD_WITH_7SEG/selected_count<3>)
-     LUT4:I0->O            1   0.704   0.000  Inst_EXTEND_BOARD_WITH_7SEG/O_7SEG_LED<3>57_F (N39)
+     LUT4:I0->O            1   0.704   0.000  Inst_EXTEND_BOARD_WITH_7SEG/O_7SEG_LED<3>57_F (N43)
      MUXF5:I0->O           1   0.321   0.420  Inst_EXTEND_BOARD_WITH_7SEG/O_7SEG_LED<3>57 (O_EXTEND_7SEG_LED_3_OBUF)
      OBUF:I->O                 3.272          O_EXTEND_7SEG_LED_3_OBUF (O_EXTEND_7SEG_LED<3>)
     ----------------------------------------
@@ -680,14 +716,14 @@ Offset:              8.643ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 31.23 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.31 secs
  
 --> 
 
-Total memory usage is 316752 kilobytes
+Total memory usage is 219496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   28 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 
