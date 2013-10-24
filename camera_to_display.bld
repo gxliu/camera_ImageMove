@@ -1,23 +1,23 @@
-Release 14.5 ngdbuild P.58f (nt)
+Release 14.5 ngdbuild P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_BASE.ucf -uc
-EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf
--uc CQ_IMGP2.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf
+-uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc
+EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc
 camera_to_display.ngd
 
-Reading NGO file "C:/Users/Chelly/GitHub/camera_ImageMove/camera_to_display.ngc"
+Reading NGO file "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.ngc"
 ...
 Loading design module "ipcore_dir/VRAM160x120x8.ngc"...
 Gathering constraint information from source properties...
 Done.
 
-Annotating constraints to design from ucf file "EXTEND_BOARD_BASE.ucf" ...
 Annotating constraints to design from ucf file "EXTEND_BOARD_7SEG.ucf" ...
 Annotating constraints to design from ucf file "CQ_IMGP2_DISPLAY.ucf" ...
 Annotating constraints to design from ucf file "CQ_IMGP2_CAMERA_J13_J15.ucf" ...
 Annotating constraints to design from ucf file "CQ_IMGP2.ucf" ...
+Annotating constraints to design from ucf file "EXTEND_BOARD_BASE.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 INFO:ConstraintSystem:178 - TNM 'I_C1PCLK', used in period specification
@@ -50,10 +50,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 116100 kilobytes
+Total memory usage is 152156 kilobytes
 
 Writing NGD file "camera_to_display.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "camera_to_display.bld"...

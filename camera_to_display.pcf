@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Wed Oct 23 16:49:07 2013
+// Written by: Map P.58f on Thu Oct 24 17:34:03 2013
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -127,10 +127,10 @@ PIN
 TIMEGRP MAIN_DCM_CLK0_BUF = BEL "disp_hsync" BEL "disp_enable" BEL
         "disp_y_color_0" BEL "disp_y_color_1" BEL "disp_y_color_2" BEL
         "disp_y_color_3" BEL "disp_y_color_4" BEL "disp_y_color_5" BEL
-        "disp_y_color_6" BEL "disp_y_color_7" BEL "disp_shift_2" BEL
-        "disp_vsync" BEL "disp_h_addr_0" BEL "disp_h_addr_1" BEL
-        "disp_h_addr_2" BEL "disp_h_addr_3" BEL "disp_h_addr_4" BEL
-        "disp_h_addr_5" BEL "disp_h_addr_6" BEL "disp_enable_8d_0" BEL
+        "disp_y_color_6" BEL "disp_y_color_7" BEL "disp_vsync" BEL
+        "disp_h_addr_0" BEL "disp_h_addr_1" BEL "disp_h_addr_2" BEL
+        "disp_h_addr_3" BEL "disp_h_addr_4" BEL "disp_h_addr_5" BEL
+        "disp_h_addr_6" BEL "disp_enable_8d_0" BEL
         "Mmult_disp_read_addr_mult0000" BEL "disp_pixel_count_0" BEL
         "disp_pixel_count_1" BEL "disp_pixel_count_2" BEL "disp_pixel_count_3"
         BEL "disp_pixel_count_4" BEL "disp_pixel_count_5" BEL
@@ -230,15 +230,15 @@ PIN
         PINNAME CLKA;
 TIMEGRP CAM1_DCM_CLK0_BUF = BEL "cam1_y_0" BEL "cam1_y_1" BEL "cam1_y_2" BEL
         "cam1_y_3" BEL "cam1_y_4" BEL "cam1_y_5" BEL "cam1_y_6" BEL "cam1_y_7"
-        BEL "cam1_href_old" BEL "cam1_y_valid" BEL "cam1_line_count_0" BEL
-        "cam1_line_count_1" BEL "cam1_line_count_2" BEL "cam1_line_count_3"
-        BEL "cam1_line_count_4" BEL "cam1_line_count_5" BEL
-        "cam1_line_count_6" BEL "cam1_line_count_7" BEL "cam1_line_count_8"
-        BEL "cam1_line_count_9" BEL "cam1_pixel_count_0" BEL
-        "cam1_pixel_count_1" BEL "cam1_pixel_count_2" BEL "cam1_pixel_count_3"
-        BEL "cam1_pixel_count_4" BEL "cam1_pixel_count_5" BEL
-        "cam1_pixel_count_6" BEL "cam1_pixel_count_7" BEL "cam1_pixel_count_8"
-        BEL "cam1_pixel_count_9" PIN
+        BEL "disp_shift_3" BEL "cam1_href_old" BEL "cam1_y_valid" BEL
+        "cam1_line_count_0" BEL "cam1_line_count_1" BEL "cam1_line_count_2"
+        BEL "cam1_line_count_3" BEL "cam1_line_count_4" BEL
+        "cam1_line_count_5" BEL "cam1_line_count_6" BEL "cam1_line_count_7"
+        BEL "cam1_line_count_8" BEL "cam1_line_count_9" BEL
+        "cam1_pixel_count_0" BEL "cam1_pixel_count_1" BEL "cam1_pixel_count_2"
+        BEL "cam1_pixel_count_3" BEL "cam1_pixel_count_4" BEL
+        "cam1_pixel_count_5" BEL "cam1_pixel_count_6" BEL "cam1_pixel_count_7"
+        BEL "cam1_pixel_count_8" BEL "cam1_pixel_count_9" PIN
         "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"
         PIN
         "VRAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_noinit.ram/dpram.dp1x1.ram.A_pins<15>"

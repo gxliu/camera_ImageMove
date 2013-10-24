@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Chelly\GitHub\camera_ImageMove\camera_to_display.ncd
-OUTFILE=C:\Users\Chelly\GitHub\camera_ImageMove\camera_to_display.bit
+INFILE=C:\Users\mottya\GitHub\camera_ImageMove\camera_to_display.ncd
+OUTFILE=C:\Users\mottya\GitHub\camera_ImageMove\camera_to_display.bit
 FAMILY=Spartan3E
 PART=xc3s1200e-4fg320
-WORKINGDIR=C:\Users\Chelly\GitHub\camera_ImageMove
+WORKINGDIR=C:\Users\mottya\GitHub\camera_ImageMove
 LICENSE=WebPack
 USER_INFO=210813875_0_0_138

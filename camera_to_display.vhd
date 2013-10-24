@@ -91,7 +91,6 @@ architecture Behavioral of camera_to_display is
 		);
 	END COMPONENT;
 
-
 	COMPONENT DCM2
 	PORT(
 		CLKIN_IN : IN std_logic;
@@ -171,9 +170,9 @@ architecture Behavioral of camera_to_display is
 	signal disp_v_addr			: std_logic_vector(9 downto 0);
 	signal disp_y_color        : std_logic_vector(7 downto 0);     -- LCDに表示される画面決定
 	signal disp_y_shadow       : std_logic_vector(9 downto 0);     -- 影の部分をカウントする
-	signal disp_shift          : integer range 0 to 512;           -- どれだけずらすか
+	signal disp_shift          : integer range 0 to 1000;           -- どれだけずらすか
 	signal disp_pixel_count_shift : std_logic_vector(9 downto 0);  -- ずらすためのしきい値
-	
+
 	-----------------------------------------
 	--EXTEND_BOARD
 	-----------------------------------------
@@ -189,6 +188,7 @@ architecture Behavioral of camera_to_display is
 		O_B_COUNT : OUT std_logic_vector(7 downto 0);
 		O_7SEG_LED : OUT std_logic_vector(7 downto 0);
 		O_7SEG_LED_SELECT : OUT std_logic
+		
 		);
 	END COMPONENT;
 	
@@ -258,6 +258,23 @@ begin
 					cam1_y	<= I_C1D(9 downto 2);
 				end if;
 			end if;		
+		end if;
+	end process;
+	
+	-- カメラ画像を取り込んだあとに輝度値を確認し、シフトする位置を決める
+	process(cam1_clk)begin
+		if(falling_edge(cam1_clk))then
+			-- カメラに対して、横中間部分で判別
+			if(disp_line_count > 260 and disp_line_count < 264)then
+				-- しきい値を超える(覆われていない)
+				if(disp_y > 40)then
+					-- 画像はズレない
+					disp_shift <= 0;
+				-- しきい値を超えない(覆われている)
+				else
+					disp_shift <= 200;
+				end if;
+			end if;
 		end if;
 	end process;
 	
@@ -375,23 +392,6 @@ begin
 				disp_h_addr <= disp_pixel_count_shift(9 downto 2) - C_MEMORY_WIDTH;
 				-- 黒に塗りつぶす
 				disp_y_color <= X"00";
-			end if;
-		end if;
-	end process;
-	
-	-- ずらす位置を決める処理
-	process(disp_clk)begin
-		if(rising_edge(disp_clk))then
-			-- カメラに対して、横中間部分で判別
-			if(disp_line_count > 260 and disp_line_count < 264)then
-				-- しきい値を超える(覆われていない)
-				if(disp_y > 40)then
-					-- 画像はズレない
-					disp_shift <= 0;
-				-- しきい値を超えない(覆われている)
-				else
-					disp_shift <= 300;
-				end if;
 			end if;
 		end if;
 	end process;

@@ -234,3 +234,98 @@ map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera
 par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_BASE.ucf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf 
 bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
+xst -intstyle ise -ifn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.xst" -ofn "C:/Users/mottya/GitHub/camera_ImageMove/camera_to_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc EXTEND_BOARD_7SEG.ucf -uc CQ_IMGP2_DISPLAY.ucf -uc CQ_IMGP2_CAMERA_J13_J15.ucf -uc CQ_IMGP2.ucf -uc EXTEND_BOARD_BASE.ucf -p xc3s1200e-fg320-4 camera_to_display.ngc camera_to_display.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o camera_to_display_map.ncd camera_to_display.ngd camera_to_display.pcf 
+par -w -intstyle ise -ol high -t 1 camera_to_display_map.ncd camera_to_display.ncd camera_to_display.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml camera_to_display.twx camera_to_display.ncd -o camera_to_display.twr camera_to_display.pcf -ucf EXTEND_BOARD_7SEG.ucf -ucf CQ_IMGP2_DISPLAY.ucf -ucf CQ_IMGP2_CAMERA_J13_J15.ucf -ucf CQ_IMGP2.ucf -ucf EXTEND_BOARD_BASE.ucf 
+bitgen -intstyle ise -f camera_to_display.ut camera_to_display.ncd 
